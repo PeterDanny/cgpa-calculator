@@ -1,0 +1,168 @@
+/* ===== Reset & Global ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9fafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* ===== Container ===== */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+/* ===== Cards ===== */
+.mode-switch, .input-card, .table-card, .result-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mode-switch:hover, .input-card:hover, .table-card:hover, .result-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.mode-switch button {
+  background: #0077b6;
+  color: white;
+}
+
+.input-card button {
+  background: #00b4d8;
+  color: white;
+}
+
+
+#calcBtn {
+  background: #4caf50;
+  color: white;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.result-actions .reset {
+  background: #f44336;
+  color: white;
+}
+
+.result-actions .share {
+  background: #25d366;
+  color: white;
+}
+
+/* ===== Inputs ===== */
+.input-card input, .input-card select {
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.input-card input:focus, .input-card select:focus {
+  border: 1px solid #0077b6;
+}
+.input-card input {
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.2s ease;
+  margin-bottom: 0.8rem; /* add spacing between inputs */
+}
+
+.input-card select {
+  margin-right: 0.5rem; /* optional, if you want spacing between grade dropdown and add button */
+}
+
+/* ===== Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+table th {
+  background: #0077b6;
+  color: white;
+}
+
+/* ===== GPA Result ===== */
+.result-card h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  color: #0077b6;
+}
+
+#gpaResult {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  background: #f1f1f1;
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+}
+.course-info p {
+  margin: 15px 0; /* adds spacing between the two lines */
+}
